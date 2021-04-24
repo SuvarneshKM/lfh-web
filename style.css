@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  height: 80px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px 0px 100px;
+}
+.container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.nav_link {
+  display: flex;
+  list-style: none;
+}
+
+.nav_link li {
+  margin: 0 30px;
+}
+
+.nav_link li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.nav_link li a:hover,
+.nav_link li a.active {
+  color: blue;
+}
+
+header .menu-btn i {
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+#click{
+	display: none;
+}
+
+
+.hero {
+	min-height: 80vh;
+	width: 100%;
+	padding-top: 50px;
+	justify-content: center;
+	background-color: black;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+}
+.hero .hero-info {
+	width: 100%;
+	text-align: center;
+}
+.hero .hero-info .hero-info-heading {
+	font-size: 3rem;
+	font-weight: 500;
+	color: whitesmoke;
+}
+.hero .hero-info .hero-info-subheading {
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	letter-spacing: .5rem;
+	color: whitesmoke;
+}
+.hero .hero-info .hero-info-button {
+	margin-top: 30px;
+	padding: 2rem 5rem;
+	display: inline-block;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	letter-spacing: .6rem;
+	background-color: rgba(85, 85, 85, 0.534);
+}
+.hero .hero-img {
+	height: auto;
+	width: 50%;
+	margin-bottom: 3rem;
+}
+.hero .hero-img img {
+	height: 100%;
+	width: 100%;
+}
+span {
+	color: blue;
+}
+@media (max-width: 980px) {
+	header .menu-btn i {
+	  display: block;
+	}
+	#click:checked ~ .menu-btn i::before{
+		content: "\f00d";
+	}
+	.nav_link {
+	  position: fixed;
+	  top: 80px;
+	  left: -100%;
+	  background: #111;
+	  height: 100vh;
+	  width: 100%;
+	  display: block;
+	  text-align: center;
+	  transition: all 0.3s ease;
+	}
+	#click:checked ~ .nav_link {
+		left: 0%;
+	}
+	.nav_link li {
+	  margin: 40px 0;
+	}
+	.nav_link li a {
+	  font-size: 20px;
+	  display: block;
+	}
+	.nav_link li a:hover,
+	.nav_link li a.active {
+	  color: blue;
+	}
+	.hero .hero-info .hero-info-heading {
+		font-size: 3rem;
+	}
+	.hero .hero-info .hero-info-subheading {
+		letter-spacing: .8rem;
+	}
+	}
+  
+	@media (min-width: 1200px) {
+
+	.hero {
+		height: 100vh;
+		flex-direction: row;
+		padding-left: 10%;
+		justify-content: center;
+		align-items: center;
+	}
+	.hero .hero-info {
+		max-width: 30%;
+		text-align: left;
+	}
+	.hero .hero-info .hero-info-subheading {
+		font-size: 1.3rem;
+		letter-spacing: .5rem;
+	}
+	.hero .hero-img {
+		min-width: 400px;
+		max-width: 1000px;
+	}
+}
