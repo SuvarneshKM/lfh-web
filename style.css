@@ -15,6 +15,7 @@ header {
   justify-content: space-between;
   padding: 0px 50px 0px 100px;
 }
+
 .container {
   width: 100%;
   height: auto;
@@ -90,21 +91,10 @@ header .menu-btn i {
   letter-spacing: 0.5rem;
   color: whitesmoke;
 }
-.hero .hero-info .hero-info-button {
-  margin-top: 30px;
-  padding: 2rem 5rem;
-  display: inline-block;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  color: white;
-  text-decoration: none;
-  letter-spacing: 0.6rem;
-  background-color: rgba(85, 85, 85, 0.534);
-}
+
 .hero .hero-img {
   height: auto;
   width: 50%;
-  margin-bottom: 3rem;
 }
 .hero .hero-img img {
   height: 100%;
@@ -152,6 +142,7 @@ span {
   .hero .hero-info .hero-info-subheading {
     letter-spacing: 0.8rem;
   }
+
 }
 
 @media (min-width: 1200px) {
@@ -174,4 +165,36 @@ span {
     min-width: 400px;
     max-width: 700px;
   }
+}
+
+.about {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('images/back.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+.about-details {
+  padding: 30px 100px;
+}
+.about-details h1 {
+  font-size: 50px;
+  font-family: 800;
+  text-transform: uppercase;
+}
+.about-details img {
+  height: 200px;
+  width: 200px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-top: 60px;
+}
+.about-details p {
+  font-size: 20px;
+  margin-top: 30px;
 }
