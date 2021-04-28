@@ -7,15 +7,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-header {
-  height: 80px;
-  background: black;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 50px 0px 100px;
-}
-
 .container {
   width: 100%;
   height: auto;
@@ -29,6 +20,19 @@ header {
   width: 50px;
   cursor: pointer;
 }
+
+
+header {
+  height: 80px;
+  width: 100%;
+	position: fixed;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px 0px 100px;
+}
+
 
 .nav_link {
   display: flex;
