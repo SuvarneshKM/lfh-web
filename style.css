@@ -25,7 +25,7 @@
 header {
   height: 80px;
   width: 100%;
-	position: fixed;
+  position: fixed;
   background: black;
   display: flex;
   align-items: center;
@@ -174,7 +174,7 @@ span {
 .about {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('images/back.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 10, 0.52), rgba(0, 0, 10, 0.52)), url('images/back.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -201,4 +201,106 @@ span {
 .about-details p {
   font-size: 20px;
   margin-top: 30px;
+}
+
+
+.projects {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  color: #000;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.projects-heading h1 {
+  font-size: 50px;
+  font-family: 800;
+  text-transform: uppercase;
+}
+
+.projects-cards{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card_image img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 640px) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 896px) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(#434343 , #000000 );
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
 }
