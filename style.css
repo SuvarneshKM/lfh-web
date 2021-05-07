@@ -304,3 +304,45 @@ span {
   margin-bottom: 1.25rem;    
   font-weight: 400;
 }
+
+/* footer */
+
+.inner-footer{
+  margin: 0;
+  padding: 0px 50px;
+  font-size: 18px;
+  background-color: #272727;
+}
+
+.social-links{
+  display: flex;
+}
+
+.social-links ul{
+  padding: 30px;
+  display: flex;
+  margin: auto;
+}
+
+.social-items{
+  list-style: none;
+}
+
+.social-items a{
+  padding: 10px 20px;
+  font-size: 35px;
+  color: #fff;
+  transition: all .25s;
+}
+
+.social-items a:hover{
+  color: blue;
+}
+
+.outer-footer{
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  background-color: #272727;
+}
