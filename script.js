@@ -11,6 +11,7 @@ window.addEventListener('scroll', ()=>{
         }
     })
 
+    
     navA.forEach( a => {
         a.classList.remove('active');
         if(a.classList.contains(current)){
