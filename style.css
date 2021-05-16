@@ -305,7 +305,6 @@ span {
   font-weight: 400;
 }
 
-/* footer */
 
 .inner-footer{
   margin: 0;
@@ -332,7 +331,7 @@ span {
   padding: 10px 20px;
   font-size: 35px;
   color: #fff;
-  transition: all .25s;
+  transition: all .3s;
 }
 
 .social-items a:hover{
